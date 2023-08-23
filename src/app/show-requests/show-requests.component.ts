@@ -20,6 +20,7 @@ export class ShowRequestsComponent {
     this.apiService.getData().subscribe(data => {
 
       this.artists = data.artists.artist;
+      this.artists = this.artists.slice(0, 25);
 
       console.log('resultado: ', data.artists.artist);
 
