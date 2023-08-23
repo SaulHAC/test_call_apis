@@ -10,7 +10,7 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   cantantes: any;
-  apiUrl = 'http://ws.audioscrobbler.com/2.0/';
+  apiUrl = 'https://ws.audioscrobbler.com/2.0/';
   private apiKey = '8f102e2d6e45e028c2ef5650ff82586e';
 
   public getData(): Observable<any> {
